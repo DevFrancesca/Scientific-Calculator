@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cal">
+        <div class="display">
+            <input type="text" id="screen1" placeholder="0" disabled>
+            <input type="text" id="screen2" disabled>
+        </div>
+            <!-- <div class="toggleBtn"></div>
+            <div class="displayInputs"></div> -->
+        <div class="btns">
+            <div class="btnsWrap">
+                <div class="row">
+                    <button onclick="clearDisplay()">AC</button>
+                    <button onclick="backspace()">DEL</button> 
+                    <button onclick="calculateSqrt()">√</button> 
+                    <button onclick="sendToScreen('(')">(</button>
+                    <button onclick="sendToScreen(')')">)</button>
+                    <button onclick="calculatePercent()">%</button>
+                     
+                </div>
+                <div class="row">
+                    <button onclick="calculateSine()">sin</button> 
+                    <button onclick="calculatePi()">π</button> 
+                    <button onclick="sendToScreen('7')">7</button>
+                    <button onclick="sendToScreen('8')">8</button>
+                    <button onclick="sendToScreen('9')">9</button>
+                    <button onclick="sendToScreen('00')">00</button> 
+                </div>
+                <div class="row">
+                    <button onclick="calculateCosine()">cos</button> 
+                    <button onclick="calculateLog()">log</button> 
+                    <button onclick="sendToScreen('4')">4</button>
+                    <button onclick="sendToScreen('5')">5</button>
+                    <button onclick="sendToScreen('6')">6</button>
+                    <button onclick="sendToScreen('0')">0</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculateTangent()">tan</button> 
+                    <button onclick="sendToScreen('')">^</button>
+                    <button onclick="sendToScreen('1')">1</button>
+                    <button onclick="sendToScreen('2')">2</button>
+                    <button onclick="sendToScreen('3')">3</button>
+                    <button onclick="sendToScreen('.')">.</button>
+                </div>
+                <div class="row">
+                    <button onclick="sendToScreen('2.71828')">e</button>
+                    <button onclick="sendToScreen('/')">/</button>  
+                    <button onclick="sendToScreen('*')">*</button>
+                    <button onclick="sendToScreen('-')">-</button>
+                    <button onclick="sendToScreen('+')">+</button>
+                    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+
+</body>
+</html>
